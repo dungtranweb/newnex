@@ -1,0 +1,21 @@
+
+// MIXINS
+@mixin rotate ($deg) {
+  -webkit-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin translateX ($val) {
+  -webkit-transform: translateX($val);
+  transform: translateX($val);
+}
+
+@mixin transform ($deg, $val) {
+  -webkit-transform: rotate($deg) translateX($val);
+  transform: rotate($deg) translateX($val);
+}
+
+@mixin transform-origin ($pos-1, $pos-2) {
+  -webkit-transform-origin: $pos-1 $pos-2;
+  transform-origin: $pos-1 $pos-2;
+}
