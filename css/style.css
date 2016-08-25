@@ -2,11 +2,16 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: normal; }
 
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
 #footer {
   position: fixed;
   bottom: 0;
   z-index: 99;
-  height: 100px;
+  height: 50px;
   font-size: 16px;
   color: #005b9e;
   background-color: transparent;
@@ -43,7 +48,29 @@ ul#menu {
     ul#menu li a {
       color: #7e7e7e;
       font-size: 20px;
-      font-weight: bold;
-      text-decoration: none; }
+      font-weight: bold; }
+
+#s-home {
+  background: white url(../images/home-bg.png) right top no-repeat fixed; }
+
+.logo {
+  margin-top: 50px; }
+
+.slogan {
+  color: #eb7a00;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px; }
+  .slogan h2, .slogan h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold; }
+  .slogan h1 {
+    margin-left: 75px;
+    font-size: 150px;
+    font-weight: 300; }
+    .slogan h1 a {
+      color: #eb7a00; }
 
 /*# sourceMappingURL=style.css.map */

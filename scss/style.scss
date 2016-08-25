@@ -10,12 +10,19 @@ body {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 // FOOTER
 #footer {
   position: fixed;
   bottom: 0;
   z-index: 99;
-  height: 100px;
+  height: 50px;
   font-size: 16px;
   color: $blue;
   background-color: transparent;
@@ -59,7 +66,37 @@ ul#menu {
       color: $grey;
       font-size: 20px;
       font-weight: bold;
-      text-decoration: none;
+    }
+  }
+}
+
+// HOME
+#s-home {
+  background: white url(../images/home-bg.png) right top no-repeat fixed;
+}
+
+.logo {
+  margin-top: 50px;
+}
+
+.slogan {
+  color: $orange;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  h1 {
+    @extend h2;
+    margin-left: 75px;
+    font-size: 150px;
+    font-weight: 300;
+    a {
+      color: $orange;
     }
   }
 }
