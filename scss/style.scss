@@ -61,6 +61,9 @@ ul#menu {
     border-bottom: 3px solid $blue;
     a {
       color: $blue;
+      &::after, &::before {
+        content: url(../images/icon-hover.png);
+      }
     }
   }
   li {
@@ -68,14 +71,14 @@ ul#menu {
     height: 100%;
     width: 25vh;
     line-height: 65px;
-    &:hover {
-      @extend .active;
-      border: none;
+    &:hover a {
+      color: $blue;
     }
     a {
       color: $grey;
       font-size: 20px;
       font-weight: bold;
+      letter-spacing: 3px;
     }
   }
 }
@@ -90,8 +93,7 @@ ul#menu {
 }
 
 .logo {
-  position: absolute;
-  top: 50px;
+  margin-top: 50px;
 }
 
 .slogan {
@@ -196,6 +198,7 @@ ul#menu {
   }
 }
 .right-side {
+  float: right;
   .arrow-left {
     position: absolute;
     top: 50%;
@@ -241,6 +244,11 @@ ul#menu {
 }
 
 // CONTACT
+#s-contact {
+  .fp-tableCell {
+    vertical-align: initial;
+  }
+}
 .map-wrapper {
   padding: 0;
 }

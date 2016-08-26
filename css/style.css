@@ -42,21 +42,24 @@ h1 {
 
 ul#menu {
   list-style-type: none; }
-  ul#menu .active, ul#menu li:hover {
+  ul#menu .active {
     border-bottom: 3px solid #005b9e; }
-    ul#menu .active a, ul#menu li:hover a {
+    ul#menu .active a {
       color: #005b9e; }
+      ul#menu .active a::after, ul#menu .active a::before {
+        content: url(../images/icon-hover.png); }
   ul#menu li {
     float: right;
     height: 100%;
     width: 25vh;
     line-height: 65px; }
-    ul#menu li:hover {
-      border: none; }
+    ul#menu li:hover a {
+      color: #005b9e; }
     ul#menu li a {
       color: #7e7e7e;
       font-size: 20px;
-      font-weight: bold; }
+      font-weight: bold;
+      letter-spacing: 3px; }
 
 #s-home {
   background: white url(../images/home-bg.png) right top no-repeat; }
@@ -65,8 +68,7 @@ ul#menu {
   position: relative; }
 
 .logo {
-  position: absolute;
-  top: 50px; }
+  margin-top: 50px; }
 
 .slogan {
   color: #eb7a00;
@@ -146,19 +148,20 @@ ul#menu {
   .left-side .title {
     width: 330px; }
 
-.right-side .arrow-left {
-  position: absolute;
-  top: 50%;
-  left: -70px;
-  margin-top: -30px;
-  cursor: pointer; }
-
-.right-side .arrow-right {
-  position: absolute;
-  top: 50%;
-  right: -50px;
-  margin-top: -30px;
-  cursor: pointer; }
+.right-side {
+  float: right; }
+  .right-side .arrow-left {
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    margin-top: -30px;
+    cursor: pointer; }
+  .right-side .arrow-right {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    margin-top: -30px;
+    cursor: pointer; }
 
 .content {
   position: relative;
@@ -185,6 +188,9 @@ ul#menu {
         height: 60px;
         font-size: 16px;
         font-weight: normal; }
+
+#s-contact .fp-tableCell {
+  vertical-align: initial; }
 
 .map-wrapper {
   padding: 0; }
