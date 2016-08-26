@@ -19,3 +19,9 @@
   -webkit-transform-origin: $pos-1 $pos-2;
   transform-origin: $pos-1 $pos-2;
 }
+
+@mixin box-shadow ($val...) {
+  -webkit-box-shadow: $val;
+  -moz-box-shadow: $val;
+  box-shadow: $val;
+}

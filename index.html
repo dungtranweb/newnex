@@ -16,19 +16,23 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.min.css">
     <link rel="stylesheet" href="css/animate.css">
-
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
     <script src="js/jquery-1.12.4.min.js" charset="utf-8"></script>
     <script src="js/jquery.fullpage.min.js" charset="utf-8"></script>
+    <script src="js/owl.carousel.js" charset="utf-8"></script>
     <script src="js/wow.min.js" charset="utf-8"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script src="js/main.js" charset="utf-8"></script>
 
   </head>
   <body>
     <!-- FIXED FOOTER -->
     <div id="footer">
-      <div class="container">
+      <div class="container home">
         <span>info@nexx.vn</span>
         <span>(+84) 838 408678</span>
         <span>258 Phan Van Han, Ward 17, Binh Thanh District, HCMC</span>
@@ -47,40 +51,239 @@
 
     <!-- MAIN CONTENT -->
     <div id="fullpage">
+
+      <!-- HOME -->
       <div class="section" id="s-home">
         <div class="container">
+
+          <!-- LOGO -->
           <div class="logo">
             <img src="images/logo-nexx.png" alt="Nexx" />
           </div>
 
+          <!-- SLOGAN -->
           <div class="slogan">
             <h2>An agency with</h2>
             <h1>
-              <a href="" class="typewrite" data-period="2000" data-type='[ "AWESOME", "CREATIVE", "PROFESIONAL", "BULLSHIT" ]'>
+              <a href="" class="typewrite" data-period="2000" data-type='[ "AWESOME", "CREATIVE", "PROFESIONAL", "FLEXIBILITY" ]'>
                 <span class="wrap"></span>
               </a>
             </h1>
           </div>
+
+          <!-- PRODUCT SLIDER -->
+          <div class="owl-slider">
+            <div class="owl-carousel">
+              <div>
+                <div class="owl-items">
+                  <img src="images/nextstep.png" alt="NextStep" />
+                </div>
+              </div>
+
+              <div>
+                <div class="owl-items">
+                  <img src="images/dtaxi.png" alt="Dtaxi" />
+                </div>
+              </div>
+
+              <div>
+                <div class="owl-items">
+                  <img src="images/nexbio.png" alt="NexBio" />
+                </div>
+              </div>
+
+              <div>
+                <div class="owl-items">
+                  <img src="images/nexex.png" alt="NexEx" />
+                </div>
+              </div>
+
+              <div>
+                <div class="owl-items">
+                  <img src="images/nexline.png" alt="NexLine" />
+                </div>
+              </div>
+
+              <div>
+                <div class="owl-items">
+                  <img src="images/gvn.png" alt="GVN" />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
+      <!-- ABOUT -->
       <div class="section" id="s-about">
-        <h1>fullPage.js</h1>
-    		<p>Continuous Scrolling Enabled</p>
+        <div class="container">
+          <h1>About us</h1>
+
+          <div class="about">
+            <div class="tree-line">
+              <img src="images/tree-line.png" alt="" />
+            </div>
+
+            <div class="content">
+              <p>
+                Nexx is the corporation provide digital marketing and marketing solutions for brands in Vietnam.
+                With the advantage of technology and digital media, Nexx bring the most optimal solution for our clients,
+                help them to improve their competitive position in the digital era. With the slogan “Your innovation is our mission”,
+                Nexx will make clients’ ideas come true to win the customers’ heart.
+              </p>
+              <p>
+                Nexx are proud to be a professional brand storyteller online who help you to connect with your target audience by digital
+                communications. We can bring you the strong tools to build your brand power from planning to execution.
+              </p>
+              <p>
+                Let us tell the story about your brand with the strong mix of 360 communication channels.
+                We will find the best way to go to customers’ heart and shopping bags together.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- NEWS -->
       <div class="section" id="s-news">
-        <h1>fullPage.js</h1>
-    		<p>Continuous Scrolling Enabled</p>
+        <div class="container">
+
+          <!-- LEFT SIDE -->
+          <div class="left-side">
+            <div class="tree-line">
+              <img src="images/tree-line-up.png" alt="" />
+            </div>
+
+            <div class="title">
+              <h1>Keep in touch with us</h1>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="right-side">
+
+            <!-- ARTICLES -->
+            <div class="content">
+              <div class="arrow-left">
+                <img src="images/arrow-left.png" alt="" />
+              </div>
+
+              <div class="article">
+                <img src="images/artimg-1.png" alt=""/>
+                <div class="description">
+                  <div class="title">
+                    <h4>Apple sells its billionth iPhone</h4>
+                  </div>
+
+                  <address>
+                    By August 01, 2016 4:54 PM ET <br>
+                    by Seth Fiegerman
+                  </address>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="images/artimg-2.png" alt=""/>
+                <div class="description">
+                  <div class="title">
+                    <h4>Beaten-down Apple stock has best day in 2 years</h4>
+                  </div>
+                  <address>
+                    By August 01, 2016 4:54 PM ET <br>
+                    by Seth Fiegerman
+                  </address>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="images/artimg-3.png" alt=""/>
+                <div class="description">
+                  <div class="title">
+                    <h4>Live video has made Facebook the place to be</h4>
+                  </div>
+                  <address>
+                    By August 01, 2016 4:54 PM ET <br>
+                    by Seth Fiegerman
+                  </address>
+                </div>
+              </div>
+
+              <div class="article">
+                <img src="images/artimg-4.png" alt=""/>
+                <div class="description">
+                  <div class="title">
+                    <h4>Facebook, Twitter cooperated with Brazil's probe into suspected Olympics terror plot</h4>
+                  </div>
+                  <address>
+                    By August 01, 2016 4:54 PM ET <br>
+                    by Seth Fiegerman
+                  </address>
+                </div>
+              </div>
+
+              <div class="arrow-right">
+                <img src="images/arrow-right.png" alt="" />
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </div>
 
+      <!-- CONTACT -->
       <div class="section" id="s-contact">
-        <h1>fullPage.js</h1>
-    		<p>Continuous Scrolling Enabled</p>
+        <div class="container-fluid clearfix">
+
+          <!-- GOOGLE MAP -->
+          <div class="map-wrapper">
+            <div id="map">
+              <div id="location"></div>
+            </div>
+          </div>
+
+
+          <!-- INFO -->
+          <div class="contact">
+            <div class="title">
+              <h1>It’s easy to find us</h1>
+            </div>
+
+            <div class="info">
+              <div class="office">
+                <h4>Viet Nam Office</h4>
+                <p>258 Phan Van Han, Ward 17, Binh Thanh District, HCMC</p>
+                <p>(+84) 902443509 - (+84) 838408678</p>
+                <p>info@nexx.vn</p>
+              </div>
+              <div class="office">
+                <h4>Singapore Office</h4>
+                <p>81 Cavenagh Road, Singapore</p>
+                <p>(+84) 902443509 - (+84) 838408678</p>
+                <p>info@nexx.vn</p>
+              </div>
+              <!-- <div class="office disapear">
+                <h4>US Office</h4>
+                <p>258 Phan Van Han, Ward 17, <br>Binh Thanh District, Ho Chi Minh City</p>
+                <p>(+84) 902443509 - (+84) 838408678</p>
+                <p>info@nexx.vn</p>
+              </div> -->
+
+              <div class="devider"></div>
+
+              <h3>OTHER WAY</h3>
+              <div class="quick-info">
+                <div><img src="images/phone-icon.png" alt="NEX telephone">&nbsp&nbsp&nbsp <span>(+84) 838 408678</span></div>
+                <div><img src="images/mail-icon.png" alt="NEX mail">&nbsp&nbsp&nbsp&nbsp <span>info@nexx.vn</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </div>
-
-
+    <!-- END -->
   </body>
 </html>
