@@ -191,6 +191,9 @@ ul#menu {
 #s-news {
   clear: both;
   background: white url(../images/news-bg.png) center center no-repeat;
+  .fp-tableCell {
+    vertical-align: initial;
+  }
 }
 .left-side {
   float: left;
